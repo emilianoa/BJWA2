@@ -17,7 +17,12 @@ public class ConfigController {
 
     @RequestMapping(value="/action/config/{name}", method = RequestMethod.GET)
     public @ResponseBody  Config getConfig(@PathVariable("name") String name) {
-        System.out.println("in controller");
         return configDAO.getConfig(name);
+    }
+
+    @RequestMapping(value="/hello/{name}", method = RequestMethod.GET)
+    public @ResponseBody
+    String sayHello(@PathVariable("name") String name) {
+        return "Hello " + name;
     }
 }
