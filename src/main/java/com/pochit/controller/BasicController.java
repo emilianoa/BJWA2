@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * Created by emilianoalbiani on 4/26/17.
  */
-@Controller
+//@Controller
 public class BasicController {
     String message = "Welcome to Spring MVC!";
 
